@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/swiper.css" />
+    <link href="https://fonts.cdnfonts.com/css/qanelas-soft" rel="stylesheet" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/cashe.css" />
+    <link rel="stylesheet" href="./style/quiz.css" />
+    <link rel="stylesheet" href="./style/adaptiv.css" />
+  </head>
+  <body>
+    <!-- main section -->
+    <section class="main">
+      <!-- cookie -->
+      <div class="cookie_fon"></div>
+
+      <!-- mobile cookie -->
+      <div class="cookie">
+        <div class="cookie__content">
+          <div class="cookie__text">
+            <h3 class="cookie__title">Файлы Cookie и персонализация</h3>
+            <p class="cookie__p">
+              Этот сайт использует файлы cookie. Мы используем файлы cookie для
+              анализа трафика и персонализации рекламы. Мы также можем делиться
+              информацией о вашем использовании нашего сайта с нашими партнерами
+              по аналитике и рекламе. Нажимая «Принять», вы соглашаетесь с
+              использованием файлов cookie.
+            </p>
+          </div>
+          <div class="cookie__btns">
+            <button class="cookie__btn_reject">Отклонить</button>
+            <button class="cookie__btn_accept">Принять</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="left-side">
+        <div class="left-side__content">
+          <!-- text and btn block -->
+          <div class="left-side__text_content">
+            <div class="left-side__logo_wrapper">
+              <img class="left-side__logo" src="./img/logo.svg" alt="" />
+            </div>
+
+            <h1 class="left_side__title">
+              Превращайте инновации в чистый ежемесячный доход
+            </h1>
+            <h3 class="left_side__subtitle">
+              Пройдите официальный тест и получите возможность получать
+              пассивный доход от <b>4000€ ежемесячно</b>
+            </h3>
+
+            <div class="left_side__btn">
+              Пройти минутный опрос
+              <img class="left_side__file" src="./img/file.svg" alt="" />
+            </div>
+          </div>
+          <!-- card block -->
+          <div class="left-side__card_block">
+            <h2 class="left-side__title_card">
+              ПРОЙДЯ ОПРОС ВЫ ГАРАНТИРОВАННО ПОЛУЧИТЕ:
+            </h2>
+            <div class="left-side__card_wrapper">
+              <!-- 1 card -->
+              <div class="left-side__card">
+                <img class="left-side__img_done" src="/img/done.svg" alt="" />
+                <div class="left-side__card_content">
+                  <div class="left-side__img_wrapper">
+                    <img src="./img/01.svg" alt="" />
+                  </div>
+                  <p>Доступ к инвестиционной платформе</p>
+                </div>
+              </div>
+              <!-- 2 card -->
+              <div class="left-side__card">
+                <img class="left-side__img_done" src="/img/done.svg" alt="" />
+                <div class="left-side__card_content">
+                  <div class="left-side__img_wrapper">
+                    <img src="./img/02.svg" alt="" />
+                  </div>
+                  <p>Пошаговый план действий</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img class="main__fon_hidden" src="./img/mobile.png" alt="" />
+      <img class="main__fon" src="./img/main_photo.png" alt="" />
+    </section>
+    <!-- quiz -->
+    <section class="quiz">
+      <div class="container">
+        <div class="quiz__wrapper">
+          <!-- block -->
+          <div class="quiz__block">
+            <div class="quiz__content">
+              <!--  -->
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <!-- 1 slide -->
+                  <div class="swiper-slide">
+                    <div class="quiz__slide">
+                      <!-- quiz__image -->
+                      <div class="quiz__image">
+                        <img class="quiz__tesla" src="./img/tesla.png" alt="" />
+                        <div class="quiz__block-content">
+                          <div class="quiz__header">
+                            <img
+                              class="quiz__logo"
+                              src="./img/logo.svg"
+                              alt=""
+                            />
+                            <h2 class="quiz__header_title">01</h2>
+                          </div>
+                          <!-- quiz__icons -->
+                          <div class="quiz__icons">
+                            <!-- 1 -->
+                            <img
+                              class="quiz__icon"
+                              src="./img/top_quize1.svg"
+                              alt=""
+                            />
+                            <!-- 2 -->
+                            <img
+                              class="quiz__icon"
+                              src="./img/top_quize2.svg"
+                              alt=""
+                            />
+                            <!-- 3 -->
+                            <img
+                              class="quiz__icon"
+                              src="./img/top_quize3.svg"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- form -->
+                      <div class="quiz__form">
+                        <h2 class="quiz__title">Какой ваш возраст?</h2>
+                        <div class="quiz__questions_wrapper">
+                          <div class="quiz__questions">
+                            <!-- 1 -->
+                            <div class="quiz__item">
+                              <label class="quiz__lable" for="question1">
+                                <input
+                                  class="quiz__real"
+                                  type="checkbox"
+                                  id="question1"
+                                />
+                                <span class="quiz__custom"></span>
+                                18-25
+                              </label>
+                            </div>
+                            <!-- 2 -->
+                            <div class="quiz__item">
+                              <label class="quiz__lable" for="question2">
+                                <input
+                                  class="quiz__real"
+                                  type="checkbox"
+                                  id="question2"
+                                />
+                                <span class="quiz__custom"></span>
+                                25-35
+                              </label>
+                            </div>
+                            <!-- 3 -->
+                            <div class="quiz__item">
+                              <label class="quiz__lable" for="question3">
+                                <input
+                                  class="quiz__real"
+                                  type="checkbox"
+                                  id="question3"
+                                />
+                                <span class="quiz__custom"></span>
+                                35-45
+                              </label>
+                            </div>
+
+                            <!-- 4 -->
+                            <div class="quiz__item">
+                              <label class="quiz__lable" for="question4">
+                                <input
+                                  class="quiz__real"
+                                  type="checkbox"
+                                  id="question4"
+                                />
+                                <span class="quiz__custom"></span>
+                                45+
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 2 slide -->
+                  <div class="swiper-slide">
+                    <div class="quiz__slide">
+                      <div class="quiz__image">
+                        <img class="quiz__tesla" src="./img/tesla.png" alt="" />
+                        <div class="quiz__block-content">
+                          <div class="quiz__header">
+                            <img
+                              class="quiz__logo"
+                              src="./img/logo.svg"
+                              alt=""
+                            />
+                            <h2 class="quiz__header_title">02</h2>
+                          </div>
+                          <div class="quiz__icons">
+                            <img
+                              class="quiz__icon"
+                              src="./img/top_quize1.svg"
+                              alt=""
+                            />
+                            <img
+                              class="quiz__icon"
+                              src="./img/top_quize2.svg"
+                              alt=""
+                            />
+                            <img
+                              class="quiz__icon"
+                              src="./img/top_quize3.svg"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- form -->
+                      <div class="quiz__form">
+                        <h2 class="quiz__title">Какой ваш возраст?</h2>
+                        <div class="quiz__questions_wrapper">
+                          <div class="quiz__questions">
+                            <!-- 1 -->
+                            <div class="quiz__item">
+                              <label class="quiz__lable" for="question5">
+                                <input
+                                  class="quiz__real"
+                                  type="checkbox"
+                                  id="question5"
+                                  data-action="finish"
+                                />
+                                <span class="quiz__custom"></span>
+                                45+
+                              </label>
+                            </div>
+                            <!-- 2 -->
+                            <div class="quiz__item">
+                              <label class="quiz__lable" for="question6">
+                                <input
+                                  class="quiz__real"
+                                  type="checkbox"
+                                  id="question6"
+                                  data-action="finish"
+                                />
+                                <span class="quiz__custom"></span>
+                                45+
+                              </label>
+                            </div>
+                            <!-- 3 -->
+                            <div class="quiz__item">
+                              <label class="quiz__lable" for="question7">
+                                <input
+                                  class="quiz__real"
+                                  type="checkbox"
+                                  id="question7"
+                                  data-action="finish"
+                                />
+                                <span class="quiz__custom"></span>
+                                45+
+                              </label>
+                            </div>
+
+                            <!-- 4 -->
+                            <div class="quiz__item">
+                              <label class="quiz__lable" for="question8">
+                                <input
+                                  class="quiz__real"
+                                  type="checkbox"
+                                  id="question8"
+                                  data-action="finish"
+                                />
+                                <span class="quiz__custom"></span>
+                                45+
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+          <!-- done block -->
+          <div class="quiz__done_block">
+            <div class="quiz__done_block_content">
+              <!-- done block header -->
+              <div class="quiz__done_header">
+                <h1 class="quiz__done_title">
+                  Вы получили доступ к платформе!
+                </h1>
+                <h2 class="quiz__done_subtitle">
+                  Чтобы началать зарабатывать уже сейчас - оставьте свои
+                  контактные данные
+                </h2>
+              </div>
+              <div class="quiz__done_wrapper_content">
+                <!-- form done -->
+                <div class="form-done__wrapper">
+                  <form id="form" class="form-done" action="">
+                    <input
+                      id="first_name"
+                      placeholder="ваше имя"
+                      class="form-done__inut"
+                      type="text"
+                      required
+                    />
+                    <input
+                      id="last_name"
+                      placeholder="ваша фамилия"
+                      class="form-done__inut"
+                      type="text"
+                      required
+                    />
+                    <input
+                      id="email"
+                      placeholder="ваша почта"
+                      class="form-done__inut"
+                      type="text"
+                      required
+                    />
+                    <div class="form-done__phone_wrapper">
+                      <div class="form-done__flag">
+                        <img src="./img/Flags.svg" alt="" />
+                        <p class="form-done__flag_p">+380</p>
+                      </div>
+                      <input
+                        id="phone"
+                        class="form-done__inut_tell"
+                        type="text"
+                        required
+                      />
+                    </div>
+                    <button class="form-done_submit" type="submit">
+                      Начать зарабатывать!
+                    </button>
+                  </form>
+                </div>
+                <!-- checkbox -->
+                <div class="checkbox-wrapper__container">
+                  <div class="checkbox-wrapper">
+                    <!-- 1 checkbox -->
+                    <label class="checkbox-wrapper__label" for="checkbox1">
+                      <input
+                        id="checkbox1"
+                        class="checkbox-wrapper__checkbox"
+                        type="checkbox"
+                      />
+                      <span class="checkbox-wrapper__custom"></span>
+                      <p class="checkbox-wrapper__p">
+                        Являюсь гражданином ЕС ( программа не принимает жителей
+                        Украины )
+                      </p>
+                    </label>
+                    <!-- 2 checkbox -->
+                    <label class="checkbox-wrapper__label" for="checkbox2">
+                      <input
+                        id="checkbox2"
+                        class="checkbox-wrapper__checkbox"
+                        type="checkbox"
+                      />
+                      <span class="checkbox-wrapper__custom"></span>
+                      <p class="checkbox-wrapper__p">
+                        Мне от 18 лет и я прочитал и принял
+                        <a class="checkbox-wrapper__link" href=""
+                          >Политику конфиденциальности</a
+                        >
+                      </p>
+                    </label>
+                  </div>
+                </div>
+
+                <script>
+                  const check = document.querySelector("#checkbox1");
+                  const checkTwo = document.querySelector("#checkbox2");
+                  check.checked = true;
+                  checkTwo.checked = true;
+                </script>
+              </div>
+            </div>
+          </div>
+          <!-- end block -->
+          <div class="quiz__end_block">
+            <div class="quiz__end_content">
+              <img class="quiz__end_img" src="./img/end.png" alt="" />
+              <div class="quiz__end_text_block">
+                <h1 class="quiz__end_title">Спасибо за вашу заявку!</h1>
+                <h2 class="quiz__end_subtitle">
+                  Вы стали на шаг ближе к пассивному доходу. Ожидайте звонка
+                  нашего менеджера в течении 24 часов!
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz__link_wrapper">
+        <p id="pol" class="quiz__link_info">Политика конфиденциальности</p>
+        <p class="quiz__link_info">Пользовательское соглашение</p>
+      </div>
+
+      <div class="pop-up__fon">
+        <div class="pop-up">
+          <img class="pop-up__close" src="./img/close.svg" alt="" />
+          <div class="pop-up__content">
+            <!-- title -->
+            <h1 class="pop-up__title">Политика конфиденциальности</h1>
+
+            <div class="pop-up__text_wrapper">
+              <p class="pop-up__text_p">
+                1. Сбор и использование информации Мы собираем определенную
+                информацию о вас, включая персональные данные, когда вы
+                посещаете наш сайт или используете наши услуги. Эта информация
+                может включать ваше имя, адрес электронной почты, контактные
+                данные и другую информацию, необходимую для обработки ваших
+                запросов. Мы используем собранную информацию для следующих
+                целей:
+              </p>
+              <ul class="pop-up__ul">
+                <li class="pop-up__text_p">
+                  Обработка ваших заказов и предоставление услуг, которые вы
+                  запросили.
+                </li>
+                <li class="pop-up__text_p">
+                  Предоставление вам информации о наших продуктах, акциях и
+                  специальных предложениях.
+                </li>
+                <li class="pop-up__text_p">
+                  Улучшение качества наших услуг и оптимизация работы нашего
+                  сайта.
+                </li>
+
+                <li class="pop-up__text_p">
+                  Предотвращение мошенничества и обеспечение безопасности нашей
+                  платформы.
+                </li>
+              </ul>
+              <p class="pop-up__text_p">
+                1. Раскрытие информации третьим лицам Мы можем передавать
+                определенную информацию третьим лицам только в случаях,
+                описанных в этой политике конфиденциальности или при получении
+                вашего согласия. Мы гарантируем, что ваша информация будет
+                передаваться только доверенным партнерам, которые соблюдают
+                соответствующие стандарты безопасности и конфиденциальности.
+              </p>
+              <p class="pop-up__text_p">
+                1. Ваши права У вас есть право запросить доступ к вашей
+                персональной информации, исправить любые неточности или удалить
+                данные, которые мы храним о вас. Вы также можете отказаться от
+                получения рекламных материалов и обновлений, связавшись с нами
+                по указанным контактным данным.
+              </p>
+              <p class="pop-up__text_p">
+                1. Изменения в политике конфиденциальности Мы оставляем за собой
+                право вносить изменения в нашу политику конфиденциальности в
+                любое время. Любые изменения будут опубликованы на этой
+                странице,
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="./js/popup.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/validation.js"></script>
+  <script src="./js/question.js"></script>
+  <script src="./js/cookies.js"></script>
+  <script src="./js/swiper.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</html>
