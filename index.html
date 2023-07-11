@@ -316,8 +316,14 @@
               <div class="quiz__done_wrapper_content">
                 <!-- form done -->
                 <div class="form-done__wrapper">
-                  <form id="form" class="form-done" action="thanck.html">
+                  <form
+                    onsubmit="return validateForm()"
+                    id="form"
+                    class="form-done"
+                    action="thanck.html"
+                  >
                     <input
+                      name="first_name"
                       id="first_name"
                       placeholder="ваше имя"
                       class="form-done__inut"
@@ -325,6 +331,7 @@
                       required
                     />
                     <input
+                      name="last_name"
                       id="last_name"
                       placeholder="ваша фамилия"
                       class="form-done__inut"
@@ -332,10 +339,11 @@
                       required
                     />
                     <input
+                      name="email"
                       id="email"
                       placeholder="ваша почта"
                       class="form-done__inut"
-                      type="text"
+                      type="email"
                       required
                     />
                     <div class="form-done__phone_wrapper">
@@ -344,9 +352,10 @@
                         <p class="form-done__flag_p">+380</p>
                       </div>
                       <input
+                        name="phone"
                         id="phone"
                         class="form-done__inut_tell"
-                        type="text"
+                        type="tel"
                         required
                       />
                     </div>
