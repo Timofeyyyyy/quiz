@@ -53,6 +53,10 @@
     height: 500px;
     width: 400px;
   }
+  .quiz__link_info {
+    width: 300px;
+    text-align: center;
+  }
   .left-side {
     padding: 50px 0px 0px 90px;
   }
@@ -347,9 +351,40 @@
   .checkbox-wrapper .checkbox-wrapper__p {
     font-size: 14px;
   }
+  .pop-up__fonn .pop-up {
+    width: 500px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /* Стилизация ползунка */
+  }
+  .pop-up__fonn .pop-up::-webkit-scrollbar {
+    width: 10px; /* Ширина ползунка */
+  }
+  .pop-up__fonn .pop-up::-webkit-scrollbar-track {
+    background: rgba(241, 241, 241, 0); /* Цвет фона ползунка */
+  }
+  .pop-up__fonn .pop-up::-webkit-scrollbar-thumb {
+    background: rgba(0, 47, 28, 0.568627451); /* Цвет ползунка */
+    height: 50px;
+    margin-left: -20px;
+    border-radius: 5px; /* Скругление углов ползунка */
+  }
+  .pop-up__fonn .pop-up .pop-up__close {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+  }
+  .pop-up__fonn .pop-up__content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 70px 40px;
+  }
   .pop-up__fon .pop-up {
     width: 500px;
     overflow-y: auto;
+    overflow-x: hidden;
     /* Стилизация ползунка */
   }
   .pop-up__fon .pop-up::-webkit-scrollbar {

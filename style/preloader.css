@@ -1,0 +1,50 @@
+/* preloader */
+.preloader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #ffffff;
+  top: 0;
+  left: 0;
+  z-index: 11;
+  transition: 0.5s all;
+  opacity: 1;
+  visibility: visible;
+}
+.preloader.done {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #ffbeb7;
+  top: 0;
+  left: 0;
+  z-index: 11;
+  transition: 1s all;
+  opacity: 0;
+  visibility: hidden;
+}
+.loader {
+  width: 100px;
+  height: 100px;
+  background: #ffff;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  z-index: 12;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  border: 10px solid #ffffff;
+
+  border-top-color: #17ae73;
+  animation: 2s spin infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+/* preloader */

@@ -1,0 +1,10 @@
+.quiz_thanck {
+  z-index: 20;
+  opacity: 1;
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background: url(./quiz_fon.png);
+  background-size: cover;
+  transition: transform 0.5s;
+}
