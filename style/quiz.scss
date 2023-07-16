@@ -24,11 +24,12 @@ body {
   visibility: visible;
 }
 .quiz__wrapper {
+  padding-top: 30px;
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+
   & .quiz__content {
     padding: 25px;
   }
@@ -36,8 +37,8 @@ body {
   & .quiz__block {
     background: #fefefe;
     width: 620px;
-
     border-radius: 30px;
+    height: 680px;
   }
   & .quiz__form {
     display: flex;
@@ -310,8 +311,8 @@ body {
   .checkbox-wrapper__custom {
     margin-top: 2px;
     position: relative;
-    width: 14px;
-    height: 14px;
+    width: 16px;
+    height: 16px;
     background: linear-gradient(
       5.75deg,
       #008752 -124.73%,
@@ -371,7 +372,7 @@ body {
 }
 .quiz__link_wrapper {
   position: absolute;
-  bottom: 50px;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;

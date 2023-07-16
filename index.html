@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- IntlTel Input Code -->
+    <link rel="stylesheet" href="./telcountry/build/css/intlTelInput.css" />
+    <script src="./telcountry/build/js/intlTelInput.min.js "></script>
+    <!-- End IntlTel Input Code -->
     <link rel="stylesheet" href="./style/swiper.css" />
     <link href="https://fonts.cdnfonts.com/css/qanelas-soft" rel="stylesheet" />
     <link rel="stylesheet" href="./style/style.css" />
@@ -300,6 +304,7 @@
               </div>
             </div>
           </div>
+
           <!-- done block -->
           <div class="quiz__done_block">
             <div class="quiz__done_block_content">
@@ -319,43 +324,59 @@
                   <form
                     onsubmit="return validateForm()"
                     id="form"
-                    class="form-done"
-                    action="thanck.html"
+                    class="form-done _form"
+                    action="thanks.php"
+                    novalidate
                   >
+                    <input type="hidden" name="country" value="" />
+                    <input type="hidden" name="lang" value="" />
+                    <input type="hidden" name="code" value="" />
                     <input
                       name="first_name"
                       id="first_name"
-                      placeholder="ваше имя"
-                      class="form-done__inut"
+                      placeholder="Ваше имя"
+                      class="form-done__inut _req _name"
                       type="text"
                       required
                     />
                     <input
                       name="last_name"
                       id="last_name"
-                      placeholder="ваша фамилия"
-                      class="form-done__inut"
+                      placeholder="Ваша фамилия"
+                      class="form-done__inut _req _name"
                       type="text"
                       required
                     />
                     <input
                       name="email"
                       id="email"
-                      placeholder="ваша почта"
-                      class="form-done__inut"
+                      placeholder="Ваша почта"
+                      class="form-done__inut _req _email"
                       type="email"
                       required
+                      autocomplete="on"
+                      required="required"
+                      name="email"
+                      id="emailInput"
                     />
                     <input
-                      placeholder="ваш номер телефона"
+                      placeholder="Ваш номер телефона"
                       name="phone"
                       id="phone"
-                      class="form-done__inut"
+                      class="form-done__inut _req _phone"
                       type="tel"
                       required
+                      autocomplete="on"
+                      required="required"
+                      name="phone"
+                      id="phoneInput"
                     />
 
-                    <button class="form-done_submit" type="submit">
+                    <button
+                      id="sbmtBtn"
+                      class="form-done_submit _btn"
+                      type="submit"
+                    >
                       Начать зарабатывать!
                     </button>
                   </form>
@@ -385,7 +406,7 @@
                       />
                       <span class="checkbox-wrapper__custom"></span>
                       <p class="checkbox-wrapper__p">
-                        Мне от 18 лет и я прочитал и принял
+                        Мне 18 лет и я прочитал и принял
                         <a class="checkbox-wrapper__link" href=""
                           >Политику конфиденциальности</a
                         >
@@ -549,6 +570,16 @@
   <script src="./js/question.js"></script>
   <script src="./js/cookies.js"></script>
   <script src="./js/swiper.js"></script>
+  <script
+    type="text/javascript"
+    src="./assets/landing/js/jquery.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="./assets/landing/js/jquery.validate.min.js"
+  ></script>
+  <script type="text/javascript" src="./assets/js/form.js"></script>
+  <script type="text/javascript" src="./assets/js/init.js"></script>
 
   <!-- Initialize Swiper -->
   <script>
@@ -558,6 +589,7 @@
         el: ".swiper-pagination",
         clickable: true,
       },
+      allowSlidePrev: false,
     });
   </script>
 </html>

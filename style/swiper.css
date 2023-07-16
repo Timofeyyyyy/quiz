@@ -304,7 +304,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
   display: none;
 }
 .swiper-pagination {
-  margin-top: 0px;
+  margin-top: 25px;
   text-align: center;
   transition: 0.3s opacity;
   transform: translate3d(0, 0, 0);
@@ -355,14 +355,14 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
 .swiper-pagination-bullet {
   width: var(
     --swiper-pagination-bullet-width,
-    var(--swiper-pagination-bullet-size, 32px)
+    var(--swiper-pagination-bullet-size, 92px)
   );
   height: var(
     --swiper-pagination-bullet-height,
-    var(--swiper-pagination-bullet-size, 8px)
+    var(--swiper-pagination-bullet-size, 12px)
   );
   display: inline-block;
-  border-radius: var(--swiper-pagination-bullet-border-radius, 2px);
+  border-radius: var(--swiper-pagination-bullet-border-radius, 12px);
   background: var(
     --swiper-pagination-bullet-inactive-color,
     linear-gradient(96.62deg, #d3e9e0 0%, rgb(211, 233, 224) 100%)
@@ -387,6 +387,11 @@ button.swiper-pagination-bullet {
   width: var(
     --swiper-pagination-bullet-width,
     var(--swiper-pagination-bullet-size, 90px)
+  );
+  border-radius: var(--swiper-pagination-bullet-border-radius, 12px);
+  height: var(
+    --swiper-pagination-bullet-height,
+    var(--swiper-pagination-bullet-size, 12px)
   );
   opacity: var(--swiper-pagination-bullet-opacity, 1);
   background: var(

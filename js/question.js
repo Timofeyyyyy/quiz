@@ -27,7 +27,7 @@ inputs.forEach(function (input) {
 
           isScrollAllowed = true; // Разрешить прокрутку после задержки
           isTransitionAllowed = true; // Разрешить переход после задержки
-        }, 500); // Задержка в 0.5 секунды
+        }, 100); // Задержка в 0.5 секунды
       }
     }
   });
@@ -52,5 +52,52 @@ swiper.on("slideChangeTransitionEnd", function () {
     swiper.allowSlideNext = true; // Разрешить переход к следующему слайду
   } else {
     swiper.allowSlideNext = false; // Запретить переход к следующему слайду
+  }
+});
+let currentSlide = 0; // Индекс текущего слайда (по умолчанию первый слайд)
+
+inputs.forEach(function (input) {
+  input.addEventListener("change", function () {
+    if (this.checked) {
+      if (isScrollAllowed && isTransitionAllowed) {
+        isScrollAllowed = false; // Запретить прокрутку
+        isTransitionAllowed = false; // Запретить переход
+
+        setTimeout(function () {
+          if (input.getAttribute("data-action") === "finish") {
+            block.forEach(function (b) {
+              b.style.display = "none";
+            });
+            done.forEach(function (d) {
+              d.classList.toggle("active");
+            });
+
+            // Disable slide transition after reaching the final slide
+            swiper.allowSlideNext = false;
+          } else {
+            // Получаем индекс активного слайда
+            currentSlide = swiper.activeIndex;
+
+            // Прокручиваем на следующий слайд, если это возможно
+            if (swiper.slides[currentSlide + 1]) {
+              swiper.slideNext();
+            }
+          }
+
+          isScrollAllowed = true; // Разрешить прокрутку после задержки
+          isTransitionAllowed = true; // Разрешить переход после задержки
+        }, 500); // Задержка в 0.5 секунды
+      }
+    }
+  });
+});
+
+swiper.on("slideChangeTransitionEnd", function () {
+  // Если разрешена прокрутка или переход, то разрешить переход к следующему слайду
+  if (isScrollAllowed && isTransitionAllowed) {
+    swiper.allowSlideNext = true;
+  } else {
+    // Иначе, прокрутить обратно к текущему слайду
+    swiper.slideTo(currentSlide);
   }
 });

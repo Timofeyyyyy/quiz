@@ -1,0 +1,114 @@
+.href-link {
+  cursor: pointer;
+}
+.waiting_block {
+  display: none;
+}
+.waiting_block img {
+  display: block;
+  width: 175px;
+  height: 175px;
+  margin: 20px auto;
+  -webkit-animation: spin 4s linear infinite;
+  -moz-animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite;
+}
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.success_block {
+  display: none;
+}
+.success_block h3 {
+  font-weight: bolder;
+  font-size: 20px;
+  margin: 10px 0;
+  text-align: center;
+}
+.success_block img {
+  width: 100%;
+  height: auto;
+}
+.valid-msg {
+  color: green;
+}
+.error-msg {
+  color: red;
+  font-weight: 700;
+}
+label.error {
+  all: unset !important;
+  color: red !important;
+  font-weight: 700 !important;
+}
+label.error:after,
+label.error:before {
+  all: unset !important;
+}
+input.valid {
+  color: green !important;
+  border: 1px solid green !important;
+  padding-right: 7% !important;
+  background: url(../img/check.svg) #fff no-repeat 98% center !important;
+  background-size: 4% !important;
+}
+input.error {
+  color: red !important;
+  border: 1px solid red !important;
+  padding-right: 7% !important;
+  background: url(../img/times.svg) #fff no-repeat 98% center !important;
+  background-size: 4% !important;
+}
+input.phone-ru {
+  padding-left: 4rem !important;
+  background: url(../img/ru.webp) no-repeat 0.3rem center,
+    url(../img/7.webp) no-repeat 2rem center !important;
+  background-size: 1.5rem, 1.5rem !important;
+}
+.poster_block {
+  width: 100%;
+  position: relative;
+}
+.poster_block .poster {
+  width: 100%;
+  position: relative;
+}
+.poster_block .play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+  max-width: 10vw;
+  cursor: pointer;
+}
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+.embed-container embed,
+.embed-container iframe,
+.embed-container object {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
